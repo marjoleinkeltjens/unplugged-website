@@ -137,6 +137,14 @@ p {
   line-height: 1.285;
 }
 
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
 address {
   font-style: normal;
 }
@@ -145,6 +153,7 @@ address {
   width: 90%;
   margin: 50px 0;
 }
+
 
 
 /* -------------------- Base Header - Footer Styles -------------------- */
@@ -162,6 +171,10 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+header figure {
+  width: 60%;
 }
 
 .header-divider {
@@ -229,8 +242,18 @@ footer .copyright {
 /* Hero Area */
 
 .hero-area {
+  background: url('../img/unplugged-retreat.jpg') center no-repeat #333;
+  background-size: cover;
+  min-height: 500px;
   display: flex;
   justify-content: center;
+}
+
+.hero-area h1 {
+  font-size: 2.25em;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 /* Aside */
@@ -273,6 +296,8 @@ input[type=button] {
 .features {
   display: flex;
   justify-content: center;
+  background: url('../img/unplugged-retreat-features.jpg') center no-repeat #333;
+  background-size: cover;
 }
 
 .features h2 {
@@ -361,7 +386,7 @@ FAQ Page
   margin-bottom: 50px;
 }
 
-.faq h4 {
+.faq-content h4 {
   line-height: 1.333;
 }
 
@@ -482,6 +507,10 @@ header nav ul {
 
 .header-divider {
   display: none;
+}
+
+header figure {
+  width: 30%;
 }
 
 /* Hero Area */
