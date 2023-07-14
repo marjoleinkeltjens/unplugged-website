@@ -98,6 +98,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   text-align: left;
   color: #e2e3ed;
+  background-color: #202322;
 }
 
 ul,
@@ -120,8 +121,9 @@ h1 {
 
 h2 {
   font-family: 'Poppins', sans-serif;
-  font-size: 1,875em;
+  font-size: 1.875em;
   font-weight: 500;
+  margin: 0;
 }
 
 h3,
@@ -159,10 +161,10 @@ address {
 /* -------------------- Base Header - Footer Styles -------------------- */
 
 header {
+  background-color: #202322; 
   display: flex;
   justify-content: center;
   padding: 15px 0;
-  background-color: #202322;
 }
 
 header .content-wrapper {
@@ -202,11 +204,11 @@ header nav ul li {
 }
 
 footer {
+  background-color: #202322; 
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: #202322;
 }
 
 footer p {
@@ -270,7 +272,7 @@ aside {
   background-color: #527158;
   display: flex;
   justify-content: center;
-  padding: 50px 0;
+  padding: 0;
 }
 
 aside .form {
@@ -337,12 +339,13 @@ input[type=button] {
 /* Reviews */
 
 .reviews {
-  background-color: #527158;
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
 }
 
 .reviews h2 {
+  margin-top: 0;
   margin-bottom: 40px;
   line-height: 1;
 }
@@ -517,6 +520,16 @@ FAQ Page
   margin: 100px 0;
 }
 
+h2 {
+  font-size: 2.25em;
+  line-height: 1.333;
+}
+
+h3 {
+  font-size: 1.5em;
+  line-height: 1.25;
+}
+
 /* Header */
 header {
   padding: 33px 0;
@@ -525,6 +538,10 @@ header {
 header .content-wrapper {
   width: 100%;
   justify-content: space-between;
+}
+
+header figure {
+  width: 30%;
 }
 
 header nav {
@@ -539,10 +556,6 @@ header nav ul {
   display: none;
 }
 
-header figure {
-  width: 30%;
-}
-
 /* Hero Area */
 .hero-area {
   min-height: 600px;
@@ -555,20 +568,28 @@ header figure {
 }
 
 /* Aside */
-  aside .content-wrapper {
-    margin: 50px 0;
-    display: flex;
-    justify-content: space-between;
-    align-content: flex-start;
+aside .content-wrapper {
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
   }
 
-  aside .content-wrapper .form-description,
-  aside .content-wrapper .form {
-    width: 40%;
-    margin: 0;
+aside .content-wrapper .form-description,
+aside .content-wrapper .form {
+  width: 40%;
+  margin: 0;
   }
 
 /* Features */
+  .features h2 {
+    margin-bottom: 20px;
+  }
+
+  .features .features-items {
+    align-items: flex-start;
+  }
+
   .features article {
     display: flex;
     align-items: center;
@@ -577,10 +598,19 @@ header figure {
   }
 
   .features .features-item-description {
-  width: 50%;
+    width: 62%;
   }
 
+  .features i {
+    margin-bottom: 30px;
+  }
+
+
 /* Reviews */
+  .reviews .content-wrapper {
+    margin: 80px 0;
+  }
+
   .reviews article {
     display: flex;
     justify-content: space-between;
@@ -588,6 +618,15 @@ header figure {
 
   .reviews article div {
     width: 49%;
+  }
+
+  .reviews h2 {
+    width: 85%;
+  }
+
+  .reviews h3 {
+    width: 75%;
+    margin: 0;
   }
 
 /* Footer */
@@ -599,7 +638,6 @@ header figure {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: row;
   }
 
   footer .contact {
@@ -640,7 +678,7 @@ header figure {
   }
 
   .map figure {
-    padding-bottom: 45,5%;
+    padding-bottom: 45.5%;
   }
 
   .contact-section .content-wrapper h2 {
@@ -673,6 +711,12 @@ FAQ Page
     width: 100%;
   }
 
+  .faq h4,
+  .faq p {
+    font-size: .875em;
+    line-height: 1.125;
+  }
+
 }
 
 @media only screen and (min-width: 1200px) {
@@ -684,9 +728,27 @@ FAQ Page
   max-width: 960px;
 }
 
+p {
+  font-size: 1.125em;
+}
+
 /* Header */
 header {
   padding: 15px 0;
+}
+
+h2 {
+  font-size: 2.25em;
+}
+
+h3,
+h4 {
+  font-size: 1.875em;
+}
+
+p {
+  font-size: 1.125em;
+  line-height: 1.333;
 }
 
 /* Hero */
@@ -714,9 +776,25 @@ aside .content-wrapper .form {
   flex-basis: 33%;
 }
 
+.features .features-item-description {
+  width: 60%;
+}
+
 /* Reviews */
+.reviews h2 {
+  padding-bottom: 50px;
+}
+
+.reviews h3 {
+  width: 70%;
+}
+
 .reviews article div {
-  width: 42%;
+  width: 46%;
+}
+
+footer h4 {
+  font-size: 1.875em;
 }
 
 /* ==========================================================================
@@ -740,8 +818,14 @@ About Page
   ========================================== */
 .faq h2 {
  width: 100%;
+ font-size: 3em;
 }
 
+.faq h4,
+.faq p {
+  font-size: 1.125em;
+  line-height: 1;
+}
 }
 
 
