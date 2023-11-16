@@ -395,7 +395,6 @@ About page
 /*========================================
 FAQ Page
 ========================================== */
-
 .faq {
   background-color: #527158;
   display: flex;
@@ -403,11 +402,11 @@ FAQ Page
 }
 
 .faq .content-wrapper {
+  margin: 50px 0 0 0;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-flow: row wrap;
-  margin: 50px 0 0 0;
 }
 
 .faq h2 {
