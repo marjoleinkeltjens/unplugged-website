@@ -539,6 +539,10 @@ header .content-wrapper {
   justify-content: space-between;
 }
 
+header figure {
+  width: 30%;
+}
+
 header a {
   width: 30%;
 }
